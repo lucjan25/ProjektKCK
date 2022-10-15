@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektKCK.MapPage"
+             BackgroundImageSource="bgmap2.png">
+
+    <FlexLayout Direction="Column" >
+        <Image Source="start.png"  
+               FlexLayout.Basis="32"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Grow="0"/>
+            <Frame FlexLayout.Basis="50"  Padding="0">
+
+                <Entry Text="Twoja lokalizacja"
+               FontSize="Medium"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"
+               
+               IsReadOnly="True"/>
+            </Frame>
+
+        <Image Source="end.png"  
+               FlexLayout.Basis="32"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Grow="0"/>
+
+        <Frame FlexLayout.Basis="50"  Padding="0">
+            <Entry Text="Sucharskiego 2 35-225 Rzeszów"
+               FontSize="Medium"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"
+               FlexLayout.Basis="50"
+               IsReadOnly="True"/>
+        </Frame>
+        <FlexLayout FlexLayout.Grow="1">
+
+            <BoxView FlexLayout.Basis="0"
+                     FlexLayout.Order="-1"
+                     Color="Blue" />
+
+        </FlexLayout>
+            
+
+        <Button Text="Standard   35,55 PLN"
+               ContentLayout="Left,5" 
+               ImageSource="carhatchback.png" 
+               FontSize="Large"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Basis="50"
+               VerticalOptions="End"/>
+        <Button Text="Premium     94,12 PLN"
+               ContentLayout="Left,5" 
+               ImageSource="carlimousine.png" 
+               FontSize="Large"
+               TextColor="#F5E6E8"
+               BackgroundColor="#403E5F"
+               FlexLayout.Basis="50"
+               VerticalOptions="End"/>
+        <Button Text="Zamów"
+               FontSize="Large"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Basis="80"
+               Clicked="OnZamowClicked"
+               VerticalOptions="End"/>
+    </FlexLayout>
+</ContentPage>

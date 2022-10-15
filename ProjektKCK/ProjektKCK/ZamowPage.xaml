@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektKCK.ZamowPage"
+             BackgroundImageSource="bgmap2.png">
+        <FlexLayout Direction="Column" >
+            <Image Source="start.png"  
+               FlexLayout.Basis="32"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Grow="0"/>
+            <Frame FlexLayout.Basis="50"  Padding="0">
+
+                <Entry Text="Twoja lokalizacja"
+               FontSize="Medium"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"
+               
+               IsReadOnly="True"/>
+            </Frame>
+
+            <Image Source="end.png"  
+               FlexLayout.Basis="32"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Grow="0"/>
+
+            <Frame FlexLayout.Basis="50"  Padding="0">
+                <Entry Text="Sucharskiego 2 35-225 Rzeszów"
+               FontSize="Medium"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"
+               FlexLayout.Basis="50"
+               IsReadOnly="True"/>
+            </Frame>
+            <FlexLayout FlexLayout.Grow="1">
+
+                <BoxView FlexLayout.Basis="0"
+                     FlexLayout.Order="-1"
+                     Color="Blue" />
+
+            </FlexLayout>
+
+
+            <Label Text="Czas oczekiwania 12:35"
+               FontSize="Large"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"
+               FlexLayout.Basis="70"
+               VerticalOptions="End"/>
+            <Label Text="94,12 PLN"
+               FontSize="Medium"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Start"
+               FlexLayout.Basis="20"
+               VerticalOptions="End"/>
+
+            <Button Text="Anuluj"
+               FontSize="Large"
+               TextColor="#F5E6E8"
+               BackgroundColor="#1E1A63"
+               FlexLayout.Basis="70"
+               Clicked="OnCancelClicked"/>
+    </FlexLayout>
+</ContentPage>

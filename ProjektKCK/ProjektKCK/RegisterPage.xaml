@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektKCK.RegisterPage"
+             BackgroundColor="#759FBC">
+
+    <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+        <BoxView HeightRequest="10"/>
+        <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
+        <Frame BackgroundColor="#BDD358" HasShadow="False">
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Entry x:Name="Email" Text="email@example.com" Placeholder="Email"   
+                           PlaceholderColor="#F5E6E8" HeightRequest="40"   
+                           Keyboard="Email"
+                           BackgroundColor="#1E1A63"
+                           TextColor="#F5E6E8"
+                           IsReadOnly="True"/>
+                <Entry x:Name="Password" Text="*******" Placeholder="Hasło"   
+                           PlaceholderColor="#F5E6E8" HeightRequest="40"   
+                           IsPassword="True"
+                           BackgroundColor="#1E1A63"  
+                           TextColor="#F5E6E8"
+                           IsReadOnly="True"/>
+                <Entry x:Name="PasswordConfirm" Text="*******" Placeholder="Powtórz hasło"   
+                           PlaceholderColor="#F5E6E8" HeightRequest="40"   
+                           IsPassword="True"
+                           BackgroundColor="#1E1A63"  
+                           TextColor="#F5E6E8"
+                           IsReadOnly="True"/>
+            </StackLayout>
+        </Frame>
+        <Button Clicked="OnRegisterClicked" Text="Zarejestruj się" TextColor="#F5E6E8"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#1E1A63"/>
+
+        <Button Clicked="OnRegisterClicked"
+                    Text="Cofnij" TextColor="#F5E6E8"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#1E1A63"/>
+    </StackLayout>
+
+</ContentPage>
